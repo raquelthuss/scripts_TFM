@@ -83,3 +83,9 @@ Loaded within the script:
 - GATK `4.5.0.0`
 - R – required by GATK to generate insert size histogram PDFs (`CollectInsertSizeMetrics`)
 
+
+## How to run on the cluster (SLURM)
+
+1. Set the SLURM array range. Edit the SLURM header to match the number of sample directories in `../fasta/` : `#SBATCH --array=1-n` 
+
+2. Submit the job (see README.md)
