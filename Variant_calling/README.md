@@ -28,4 +28,18 @@ The scripts assume the following structure:
 |   |-- ...
 </code></pre>
 
+There needs to be one folder per sample under `../fasta/`, with FASTQ files named as `*_1.fq.gz` and `*_2.fq.gz` (one or more lanes per sample).
+
 The reference genome used in this pipeline is: **glyma.Wm82.gnm6.S97D.genome_main.fna**
+
+## How to run on the cluster (SLURM)
+
+From the directory containing the script: 
+`sbatch script.sh`
+
+Job-specific log files will be generated for each array task:
+- `<prefix>_<jobID>_<taskID>.log`
+- `<prefix>_<jobID>_<taskID>.log`
+
+where `<prefix>` corresponds to the executed step or tool (e.g., `bwa`, `gatk_haplotype`, `fastqc`, etc.).
+
