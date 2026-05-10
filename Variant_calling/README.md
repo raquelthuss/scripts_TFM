@@ -30,7 +30,7 @@ The scripts assume the following structure:
 
 There needs to be one folder per sample under `../fasta/`, with FASTQ files named as `*_1.fq.gz` and `*_2.fq.gz` (one or more lanes per sample).
 
-The reference genome used in this pipeline is: **glyma.Wm82.gnm6.S97D.genome_main.fna**
+The reference genome used in this pipeline is: **glyso.PI483463.gnm1.YJWS.genome_main.fna**
 
 ## How to run on the cluster (SLURM)
 
