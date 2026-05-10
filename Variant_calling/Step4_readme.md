@@ -96,7 +96,11 @@ gendb_Gs01_50000001_57896170
 -   GATK v4.5.0.0
 -   SLURM workload manager
 
+## How to run on the cluster (SLURM)
 
+1. Set the SLURM array range. The array size must match the number of intervals `#SBATCH --array=1-6` 
+
+2. Submit the job (see README.md)
 
 
 
