@@ -35,6 +35,7 @@ For each sample and chromosome:
   
 Example:
 `1_glyso.PI483463.gnm1.Gs07:1-44817240.g.vcf.gz` 
+`1_glyso.PI483463.gnm1.Gs07:1-44817240.g.vcf.gz.tbi` 
 
 ## Genomic regions
 
