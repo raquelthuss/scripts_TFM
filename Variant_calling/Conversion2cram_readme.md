@@ -11,4 +11,26 @@ removed to free up disk space.
 
 ### Script summary
 
-1. 
+1. Loops over all BAM files found in the input directory.
+2. Converts each BAM to CRAM format using `samtools view` with the provided reference genome.
+3. Generates a CRAI index for each successfully converted CRAM file.
+4. Removes the original BAM file and its associated indices (.bai, .sbi).
+
+### Inputs
+
+- BAM and BAM index: `../bwa/`
+- Reference genome: `../ref/glyso.PI483463.gnm1.YJWS.genome_main.fna`
+
+### Outputs
+
+Written to: `../bwa/`
+
+- CRAM and CRAM index: `sample_sorted_dedup.cram` `sample_sorted_dedup.cram.crai`
+
+### Tools
+
+- SAMtools `1.17`
+
+### How to run on the cluster (SLURM)
+
+sbatch Conversion2cram.sh
