@@ -1,4 +1,4 @@
-## Conversion from .BAM to .CRAM
+## Conversion from BAM to CRAM
 
 ### Description
 
