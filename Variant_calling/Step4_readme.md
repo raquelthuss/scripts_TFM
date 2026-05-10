@@ -52,10 +52,50 @@ glyso.PI483463.gnm1.Gs01:40000001-50000000
 glyso.PI483463.gnm1.Gs01:50000001-57896170
 ```
 
-## Tools / modules
+### Tools / modules
 
 -   Python – interval generation
 -   SLURM workload manager
+
+## Step 4b. Import to GenomicsDB workspace
+
+### Script summary
+
+1.  Defines the chromosome and chunk size
+2.  Reads the **sample map**
+3.  Reads the **interval list**
+4.  Assigns one interval per SLURM task
+5.  Runs `GenomicsDBImport`
+6.  Creates one GenomicsDB workspace per interval
+
+### Inputs
+
+-   Sample map and intervals list from Step 4a   `sample_map_<GM>.txt`  `<GM>_<CHUNK>.intervals.list`
+-   Chromosome-specific gVCFs
+-   Reference genome:  `../ref/glyso.PI483463.gnm1.YJWS.genome_main.fna`
+
+### Outputs
+
+Written to: `../genomicsDB/genomicsdb_<GM>/`
+
+- One workspace per interval:
+
+Example for Gs01:
+
+```text
+gendb_Gs01_1_10000000
+gendb_Gs01_10000001_20000000
+gendb_Gs01_20000001_30000000
+gendb_Gs01_30000001_40000000
+gendb_Gs01_40000001_50000000
+gendb_Gs01_50000001_57896170
+```
+
+## Tools / modules
+
+-   GATK v4.5.0.0
+-   SLURM workload manager
+
 
 
 
