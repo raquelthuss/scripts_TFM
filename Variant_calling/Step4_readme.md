@@ -33,8 +33,33 @@ Written to: `../genomicsDB/genomicsdb_<GM>/`
 - sample map `sample_map_<GM>.txt`
 - intervals list `<GM>_<CHUNK>.intervals.list`
 
-### Example of sample map format
+Example sample map for GS01:
 
-`sample`     `../Gs01/sample.g.vcf.gz`
+```text
+sample1       $HOME/tfm/genomicsDB/genomicsdb_Gs01/sample1.g.vcf.gz
+sample1       $HOME/tfm/genomicsDB/genomicsdb_Gs01/sample2.g.vcf.gz
+sample3       $HOME/tfm/genomicsDB/genomicsdb_Gs01/sample3.g.vcf.gz
+```
+
+Example intervals list for Gs01:
+
+```text
+glyso.PI483463.gnm1.Gs01:1-10000000
+glyso.PI483463.gnm1.Gs01:10000001-20000000
+glyso.PI483463.gnm1.Gs01:20000001-30000000
+glyso.PI483463.gnm1.Gs01:30000001-40000000
+glyso.PI483463.gnm1.Gs01:40000001-50000000
+glyso.PI483463.gnm1.Gs01:50000001-57896170
+```
+
+## Tools / modules
+
+-   Python – interval generation
+-   SLURM workload manager
+
+
+
+
+
 
 
