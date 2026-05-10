@@ -23,11 +23,33 @@ The script performs two sequential jobs:
 
 ### Inputs
 
--   GenomicsDB workspaces from Step 4b `../genomicsDB/genomicsdb_<GM>/gendb_<GM>_<interval>/`
--   Interval list from Step 4a `../genomicsDB/genomicsdb_<GM>/<GM>_<CHUNK>.intervals.list`
+-   GenomicsDB workspaces from Step 4b `../genomicsDB/genomicsdb_<GS>/gendb_<GS>_<interval>/`
+-   Interval list from Step 4a `../genomicsDB/genomicsdb_<GS>/<GS>_<CHUNK>.intervals.list`
 -   Reference genome `../ref/glyso.PI483463.gnm1.YJWS.genome_main.fna`
 
 ### Outputs
 
-- Chunk-level VCFs: 
-Written to: `../joint_genotype/genotyped_chunks_<GM>_<CHUNK>/`
+- Chunk-level VCFs
+
+Written to: `../joint_genotype/genotyped_chunks_<GS>_<CHUNK>/`
+
+Example:
+
+```text
+Gs01_chunk_1.vcf.gz  
+Gs01_chunk_2.vcf.gz  
+Gs01_chunk_3.vcf.gz
+```
+- Final chromosome VCF
+
+Written to: `../joint_genotype/<GS>_genotyped_chunks.vcf.gz`
+
+Example: `../joint_genotype/Gs01_genotyped_chunks.vcf.gz`
+
+### Tools / modules
+
+-   GATK v4.5.0.0
+-   BCFtools v1.18
+-   SLURM workload manager
+
+### How to run on the cluster (SLURM)
