@@ -34,6 +34,7 @@ For each sample and chromosome:
 -   gVCF index: `<SAMPLE>_<REGION>.g.vcf.gz.tbi`
   
 Example:
+
 `1_glyso.PI483463.gnm1.Gs07:1-44817240.g.vcf.gz` 
 `1_glyso.PI483463.gnm1.Gs07:1-44817240.g.vcf.gz.tbi` 
 
