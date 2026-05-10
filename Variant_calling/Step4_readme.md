@@ -28,10 +28,10 @@ For this reason, Step 4 is divided into two parts:
 
 ### Outputs
 
-Written to: `../genomicsDB/genomicsdb_<GM>/`
+Written to: `../genomicsDB/genomicsdb_<GS>/`
 
-- sample map `sample_map_<GM>.txt`
-- intervals list `<GM>_<CHUNK>.intervals.list`
+- sample map `sample_map_<GS>.txt`
+- intervals list `<GS>_<CHUNK>.intervals.list`
 
 Example sample map for GS01:
 
@@ -70,13 +70,13 @@ glyso.PI483463.gnm1.Gs01:50000001-57896170
 
 ### Inputs
 
--   Sample map and intervals list from Step 4a   `sample_map_<GM>.txt`  `<GM>_<CHUNK>.intervals.list`
+-   Sample map and intervals list from Step 4a   `sample_map_<GS>.txt`  `<GS>_<CHUNK>.intervals.list`
 -   Chromosome-specific gVCFs
 -   Reference genome:  `../ref/glyso.PI483463.gnm1.YJWS.genome_main.fna`
 
 ### Outputs
 
-Written to: `../genomicsDB/genomicsdb_<GM>/`
+Written to: `../genomicsDB/genomicsdb_<GS>/`
 
 - One workspace per interval:
 
