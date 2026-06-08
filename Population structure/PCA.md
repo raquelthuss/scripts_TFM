@@ -2,9 +2,8 @@
 
 ### Description
 
-In order to visualize genetic structure within a population a **Principal Component Analysis**
-(PCA) can be perform. A pruned dataset (LD, MAF) in binary PLINK format is required. Using **PLINK** 
-eigenvectors and eigenvalues are generated, that can be imported in R and be plotted. 
+A **Principal Component Analysis** (PCA) is perform to visualize genetic structure within a population. A pruned dataset (LD, MAF) 
+in binary PLINK format is required. **PLINK** is used to compute eigenvectors and eigenvalues which can be imported in R for visualization. 
 
 ### Usage
 
@@ -16,9 +15,12 @@ plink --bfile final_dataset --pca --allow-extra-chr --out dataset_pca
 
 ### Input
 
-- 
+- Pruned dataset converted to binary PLINK format `.bed/.bim/.fam`
 
 ### Output
+
+- Per-individual PC coordinates `.eigenvec`
+- Variance explained by each principal component `.eigenval`
 
 ### Tools
 
