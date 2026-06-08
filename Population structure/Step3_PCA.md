@@ -2,7 +2,7 @@
 
 ### Description
 
-A **Principal Component Analysis** (PCA) is perform to visualize genetic structure within a population. A pruned dataset (LD, MAF) 
+A **Principal Component Analysis** (PCA) is performed to visualize genetic structure within a population. A pruned dataset (LD, MAF) 
 in binary PLINK format is required. **PLINK** is used to compute eigenvectors and eigenvalues which can be imported in R for visualization. 
 
 ### Usage
