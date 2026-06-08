@@ -2,35 +2,32 @@
 
 ### Description
 
-In order to run fastSTRUCTURE, it is neccessary to convert the filtered chromosome-level gVCF file generated in the previous step to the input structure format. 
-Before that, a **linkage dissequilibrium (LD) pruning** step must be performed to exclude SNPs that are tightly linked (high LD), leaving a dataset of unlinked, 
-representative markers. This ensures that each SNP contributes independent information and does not inflate signals in the analysis.
+Before running fastSTRUCTURE, two preprocessing steps are required.
 
-In this workflow, **PLINK** is aplied to remove SNPs in high linkage disequilibrium (LD) within a 50 SNP window, shifting by 5 SNPs and removing one of any 
-pair with r² > 0.2. Moreover, an additional filtering step retains only SNPs with a minor allele frequency (MAF) ≥ 1%. 
+First, a **linkage disequilibrium (LD)** pruning step is performed to remove SNPs that are tightly linked, retaining only unlinked, representative markers. This ensures that each SNP contributes independent information and prevents inflation of signals in downstream analyses. SNPs are pruned within a sliding window of 50 SNPs (shifting by 5) by removing one SNP from any pair with r² > 0.2.
 
-### 
-After the installation, **PLINK** can be run from the command line like followes:
-`plink --vcf gsoja.vcf.gz --maf 0.01 --indep-pairwise 50 5 0.2 --allow-extra-chr --out dataset_pruned`
+Second, the pruned dataset is converted to the **binary PLINK format** (BED/BIM/FAM) required as input for fastSTRUCTURE. Both steps apply an additional filter retaining only SNPs with a minor allele frequency (MAF) ≥ 1%.
+All processing is performed with **PLINK**.
 
-The conversion to the input format can be done like: 
-`plink --vcf gsoja.vcf.gz --maf 0.01 --extract dataset_pruned.prune.in --make-bed --allow-extra-chr --out final_dataset`
+### Usage
 
+LD pruning: 
+
+`plink --vcf gsoja.vcf.gz --maf 0.01 --indep-pairwise 50 5 0.2 --allow-extra-chr --out dataset`
+
+Conversion to input format:
+
+`plink --vcf gsoja.vcf.gz --maf 0.01 --extract dataset.prune.in --make-bed --allow-extra-chr --out final_dataset`
 
 ### Input
 
-- Filtered chromosome-level gVCF file: `gsoja.vcf.gz`
+- LD pruning: filtered chromosome-level VCF file `gsoja.vcf.gz`
+- Format conversion: SNPs that passed LD pruning `.prune.in`
 
 ### Outputs
 
-- `dataset_pruned.prune.in` : SNPs that PASS LD filtering
-- `dataset_pruned.prune.out`: SNPs that do not PASS LD filtering
-- `dataset_pruned.log`: log file of the process
-
-- `dataset_filtered.bed`: genotypes in binary PLINK format
-- `dataset_filtered.bim`: information about the SNPs (chr, id, pos, alleles)
-- `dataset_filtered.fam`: information about the samples (family, individual, sex, phenotype)
-- `dataset_filtered.log`: log file of the process
+- LD pruning: `.prune.in` (SNPs that passed LD filtering), `.prune.out`(SNPs removed during LD filtering) and `.log` (process log)
+- Conversion to input format: `.bed` (genotypes in binary PLINK format), `.bim` (SNP information: chr, id, pos, alleles), `.fam` (sample information: family, individual, sex, phenotype) and `.log` (process log)
 
 ### Tools
 
