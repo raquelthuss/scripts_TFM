@@ -27,7 +27,7 @@ chooseK.py --input=results_faststr
 
 ### Inputs
 
-- Pruned dataset converted to binary PLINK format (BED/BIM/FAM)
+- Pruned dataset converted to binary PLINK format `.bed/.bim/.fam`
 
 ### Outputs
 
