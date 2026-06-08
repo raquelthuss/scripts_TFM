@@ -16,8 +16,10 @@ plink --bfile final_dataset --pca --allow-extra-chr --out dataset_pca
 
 ### Input
 
+- 
+
 ### Output
 
 ### Tools
 
-- PLINK 
+- PLINK `v1.9.0-b.7.11`
