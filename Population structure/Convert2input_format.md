@@ -11,17 +11,17 @@ All processing is performed with **PLINK**.
 
 ### Usage
 
-LD pruning: 
+```bash
+# LD pruning: 
+plink --vcf gsoja.vcf.gz --maf 0.01 --indep-pairwise 50 5 0.2 --allow-extra-chr --out dataset
 
-`plink --vcf gsoja.vcf.gz --maf 0.01 --indep-pairwise 50 5 0.2 --allow-extra-chr --out dataset`
-
-Conversion to input format:
-
-`plink --vcf gsoja.vcf.gz --maf 0.01 --extract dataset.prune.in --make-bed --allow-extra-chr --out final_dataset`
+# Conversion to input format:
+plink --vcf gsoja.vcf.gz --maf 0.01 --extract dataset.prune.in --make-bed --allow-extra-chr --out final_dataset
+```
 
 ### Input
 
-- LD pruning: filtered chromosome-level VCF file `gsoja.vcf.gz`
+- LD pruning: filtered chromosome-level VCF file `.vcf.gz`
 - Format conversion: SNPs that passed LD pruning `.prune.in`
 
 ### Outputs
