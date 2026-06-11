@@ -3,7 +3,7 @@
 ### Description
 
 A **neighbor-joining tree** is constructed to further characterize population structure. The neccesary R script to accomplish this ("Phylogenetic_tree.R", also
-included in this directory) requires an uncompressed VCF (Variant Call Format) as input, the compressed VCF (.vcf.gz) is first converted in this step using **PLINK**.
+included in this directory) requires an uncompressed VCF (Variant Call Format) as input, the pruned dataset (obtained in Step 2) is first converted in this step using **PLINK**.
 
 ### Usage
 
