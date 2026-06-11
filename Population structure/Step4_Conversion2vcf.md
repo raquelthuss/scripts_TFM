@@ -2,8 +2,7 @@
 
 ### Description
 
-A **neighbor-joining tree** is constructed to further characterize population structure. The neccesary R script to accomplish this ("Phylogenetic_tree.R", also
-included in this directory) requires an uncompressed VCF (Variant Call Format) as input, the pruned dataset (obtained in Step 2) is first converted in this step using **PLINK**.
+A **neighbor-joining tree** is constructed to further characterize population structure. The required R script to perform this analysis (Phylogenetic_tree.R, also included in this directory) uses an uncompressed VCF (Variant Call Format) file as input. Therefore, the pruned dataset in binary PLINK format (generated in Step 1) is first converted using **PLINK** in this step.
 
 ### Usage
 
@@ -14,11 +13,11 @@ plink --bfile final_dataset --recode vcf --out final_dataset
 
 ### Input
 
-- Pruned dataset converted to binary PLINK format `.bed/.bim/.fam`
+- Pruned dataset in binary PLINK format `.bed/.bim/.fam`
 
 ### Output
 
-- Variant Call Format file `.vcf`
+- Pruned dataset converted to Variant Call Format `.vcf`
 
 ### Tools
 
