@@ -6,7 +6,7 @@ The installation of **fastSTRUCTURE** and its underlying dependencies (NumPy, Sc
 environment, using the `bioconda` channel, which provides precompiled packages that ensure compatibility and reproducibility.
 
 The dataset is analyzed across K = 1 to 10 potential clusters in a loop. Once completed, the **optimal number of clusters** was identified using the built-in `chooseK.py` utility, which outputs both the K that maximizes marginal likelihood and the minimum K required to explain the population structure.
-The output files can be loaded into R using the Visualization_barplot.R script (also included in this directory), which generates STRUCTURE barplots to visualize the clustering results.
+The output files can be loaded into R using the Barplot_Population_Structure.R script (also included in this directory), which generates STRUCTURE barplots to visualize the clustering results.
 
 ### Usage
 
