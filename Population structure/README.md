@@ -6,4 +6,11 @@ To adress this, **fastSTRUCTURE** is applied, a Bayesian clustering algorithm fo
 
 - Step 1: Convert the chromosome-level VCF file to binary PLINK format (required input for fastSTRUCTURE).
 - Step 2: Run fastSTRUCTURE across a range of K values and determine the optimal number of clusters.
-- Step 3: Perform a Principal Component Analysis (PCA) to visualize population structure. 
+- Step 3: Perform a Principal Component Analysis (PCA) to visualize population structure.
+- Step 4: Convert dataset in binary PLINK format to Variant Call Format (VCF) to allow neighbor-joining tree construction.
+
+The **R scripts** used to generate the barplots, PCA and phylogenetic tree can be found in this directory under the following names: 
+
+- Barplot_Population_Structure.R
+- PCA_Population_Structure.R
+- Phylogenetic_tree_Population_Structure.R
