@@ -1,6 +1,6 @@
 ## Description
 
-This directory includes the scripts used to perform **GWAS analysis**, to identify maker-trait associations, incorporating genotype data, covariate data, and phenotype data. 
+This directory includes the scripts used to perform **GWAS analysis**, to identify maker-trait associations using **GAPIT**, incorporating genotype data, covariate data, and phenotype data. 
 Each script contains the necessary commands to run:
 
 - **Phenotype_Analysis.R**: analysis of phenotype distribution using a Gamma GLMM and extraction of estimated marginal means
