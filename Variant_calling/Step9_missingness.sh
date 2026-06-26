@@ -18,9 +18,9 @@ module load HTSlib/1.18-GCC-12.3.0   || true
 # EDIT ONLY THIS
 # =========================
 INDIR="../joint_genotype/gatk_filtered_biallelic_maskGT_dp5"
-OUTDIR="../joint_genotype/gatk_filtered_biallelic_maskGT_miss20"
+OUTDIR="../joint_genotype/gatk_filtered_biallelic_maskGT_miss005"
 
-MAX_MISSING=0.20   # 0.10 looser; 0.05 standard for GWAS-ready
+MAX_MISSING=0.05
 THREADS="${SLURM_CPUS_PER_TASK:-1}"
 # =========================
 
@@ -29,11 +29,7 @@ mkdir -p "$OUTDIR"
 CHR=$(printf "Gs%02d" "$SLURM_ARRAY_TASK_ID")
 
 IN_VCF="${INDIR}/${CHR}_GATK_snps_PASS_biallelic_maskGT.vcf.gz"
-# OUT_VCF="${OUTDIR}/${CHR}_GATK_snps_PASS_biallelic_maskGT_miss$(printf "%03d" $(echo "$MAX_MISSING*1000" | bc -l | cut -d. -f1)).vcf.gz"
-# The OUT_VCF line above makes a nice suffix like miss050 for 0.05; if you prefer miss005, set it manually below.
-
-# If you want EXACTLY "miss005" naming, comment the OUT_VCF line above and use this:
-OUT_VCF="${OUTDIR}/${CHR}_GATK_snps_PASS_biallelic_maskGT_miss20.vcf.gz"
+OUT_VCF="${OUTDIR}/${CHR}_GATK_snps_PASS_biallelic_maskGT_miss005.vcf.gz"
 
 echo "============================================================"
 echo "[INFO] Filter sites by missingness after masking — per chr"
