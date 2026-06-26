@@ -16,6 +16,6 @@ This directory includes the commands used to assess **population structure**, a 
 
 To adress this, **fastSTRUCTURE** is applied, a Bayesian clustering algorithm for large SNP datasets.
 
-## 3. GWAS (Genome-Wide Associations Studies)
+## 3. GWAS (Genome-Wide Associations Study)
 
 This directory includes the scripts used to perform **GWAS analysis**, to identify maker-trait associations using **GAPIT**, incorporating genotype data, covariate data, and phenotype data.
