@@ -24,8 +24,8 @@ Written to `../joint_genotype/gwas_ready/`
 
 ## Tools / modules
 
-- BCFtools `v1.18`
-- HTSlib `v1.18`
+- BCFtools v1.18
+- HTSlib v1.18
 
 ## How to run on the cluster (SLURM)
 
