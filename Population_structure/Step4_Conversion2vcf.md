@@ -21,4 +21,4 @@ plink --bfile final_dataset --recode vcf --out final_dataset
 
 ### Tools
 
-- PLINK `v1.9.0-b.7.11`
+- PLINK v1.9.0-b.7.11
