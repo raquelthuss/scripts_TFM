@@ -2,7 +2,7 @@
 
 This directory includes the scripts used to perform **GWAS analysis**, to identify maker-trait associations using **GAPIT**, incorporating genotype data, covariate data, and phenotype data. The worflow consists of the following steps:
 
-- Step 1: Convert the chromosome-level .vcf.gz file to .vcf (Step1_Convert2vcf.md).
+- Step 1: Convert the chromosome-level .vcf.gz file to .vcf (Convert2vcf.md).
 - Step 2: Convert the chromosome-level .vcf to HapMap format required by GAPIT (Conversion2hapmap.md).
 - Step 3: Conduct a phenotype analysis.
 - Step 4: Perform GWAS analysis with GAPIT.
