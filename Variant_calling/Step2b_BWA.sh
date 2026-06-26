@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=64G
 #SBATCH --time=24:00:00
-#SBATCH --array=1-6               # <-- set this to number of *sample folders*
+#SBATCH --array=1-6
 #SBATCH --mail-type=END,FAIL
 
 start_time=$(date +%s)
