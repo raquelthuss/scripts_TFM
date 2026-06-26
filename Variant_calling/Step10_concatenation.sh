@@ -14,8 +14,8 @@ module load BCFtools/1.18-GCC-12.3.0 || true
 module load HTSlib/1.18-GCC-12.3.0   || true
 
 # =========================
-INDIR="../joint_genotype/gatk_filtered_biallelic_maskGT_miss20"
-OUT_VCF="../joint_genotype/gwas_ready/gsoja_dp5_miss20.vcf.gz"
+INDIR="../joint_genotype/gatk_filtered_biallelic_maskGT_miss005"
+OUT_VCF="../joint_genotype/gwas_ready/gsoja_dp5_miss005.vcf.gz"
 THREADS="${SLURM_CPUS_PER_TASK:-1}"
 # =========================
 
@@ -27,7 +27,7 @@ echo "============================================================"
 
 vcfs=()
 for i in $(seq -w 1 20); do
-  f="${INDIR}/Gs${i}_GATK_snps_PASS_biallelic_maskGT_miss20.vcf.gz"
+  f="${INDIR}/Gs${i}_GATK_snps_PASS_biallelic_maskGT_miss005.vcf.gz"
   [[ -f "$f" ]] || { echo "[ERROR] Missing $f"; exit 1; }
   vcfs+=("$f")
 done
