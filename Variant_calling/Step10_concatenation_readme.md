@@ -18,7 +18,7 @@ Concatenation is performed after chromosome-level filtering to improve performan
 
 - Chromosome-level genotyped VCF `../joint_genotype/gatk_filtered_biallelic_maskGT_dp5/<CHR>_GATK_snps_PASS_biallelic_maskGT.vcf.gz`
 
-- - Chromosome-level genotyped VCF Index `../joint_genotype/gatk_filtered_biallelic_maskGT_dp5/<CHR>_GATK_snps_PASS_biallelic_maskGT.vcf.gz.tbi`
+- Chromosome-level genotyped VCF Index `../joint_genotype/gatk_filtered_biallelic_maskGT_dp5/<CHR>_GATK_snps_PASS_biallelic_maskGT.vcf.gz.tbi`
 
 ```text
 ../joint_genotype/gatk_filtered/biallelic_maskGT_miss005/Gs01_GATK_snps_PASS_biallelic_maskGT_miss005.vcf.gz 
