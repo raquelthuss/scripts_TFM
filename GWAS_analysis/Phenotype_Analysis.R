@@ -119,7 +119,7 @@ dev.off()
 # 5. EMMEANS
 # =============================================================================
 
-# # Extract estimated marginal means and standard errors for each genotype
+# Extract estimated marginal means and standard errors for each genotype
 emmeans_WP <- emmeans(fit_gamma_log, ~ Genotype)
 emmeans_WP <- as.data.frame(emmeans_WP) %>%
   select(Genotype, emmean, SE) %>%
