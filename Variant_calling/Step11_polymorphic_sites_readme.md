@@ -1,4 +1,4 @@
-# Step 11. 
+# Step 11. Genome-wide VCF polymorphic filtering
 
 ## Description
 
