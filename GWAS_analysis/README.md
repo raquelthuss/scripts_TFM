@@ -12,4 +12,6 @@ Each script contains the necessary commands to run:
 - **Manhattan_Plot.R**: manhattan plot showing -log10(p-values) across the 20 chromosomes for three statistical models
   
 - **Boxplot_SNP_Gs(16/11).R**: boxplots showing nodule size distribution across genotypic classes of SNP 
-Gs16:12963807:G-A and Gs11:36243818:C-T, respectively. 
+Gs16:12963807:G-A and Gs11:36243818:C-T, respectively.
+
+- **Linkage_disequilibrium_analysis.R**: linkage disequilibrium (LD) block definition surrounding top SNPs  
