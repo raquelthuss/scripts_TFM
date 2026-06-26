@@ -78,9 +78,9 @@ Intermediate files (removed by default):
 
 Loaded within the script:
 
-- BWA `0.7.17`
-- SAMtools `1.17`
-- GATK `4.5.0.0`
+- BWA 0.7.17
+- SAMtools 1.17
+- GATK 4.5.0.0
 - R – required by GATK to generate insert size histogram PDFs (`CollectInsertSizeMetrics`)
 
 
