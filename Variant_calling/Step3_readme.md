@@ -58,8 +58,8 @@ Each SLURM array task corresponds to **one chromosome**.
 
 The following tools are loaded within the script:
 
--   **GATK** v4.5.0.0 – variant calling
--   **BCFtools** v1.18 – indexing support
+-   GATK v4.5.0.0
+-   BCFtools v1.18
 
 ## How to run on the cluster (SLURM)
 
