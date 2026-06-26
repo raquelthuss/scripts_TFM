@@ -9,7 +9,7 @@ To adress this, **fastSTRUCTURE** is applied, a Bayesian clustering algorithm fo
 - Step 3: Perform a Principal Component Analysis (PCA) to visualize population structure.
 - Step 4: Convert dataset in binary PLINK format to Variant Call Format (VCF) to allow neighbor-joining tree construction.
 
-The **R scripts** used to generate the barplots, PCA and phylogenetic tree can be found in this directory under the following names: 
+The **R scripts** used to generate the barplots, PCA and neighbor-joining tree can be found in this directory under the following names: 
 
 - Population_Structure.R
 - PCA.R
