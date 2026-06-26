@@ -11,6 +11,6 @@ To adress this, **fastSTRUCTURE** is applied, a Bayesian clustering algorithm fo
 
 The **R scripts** used to generate the barplots, PCA and phylogenetic tree can be found in this directory under the following names: 
 
-- Barplot_Population_Structure.R
-- PCA_Population_Structure.R
-- Phylogenetic_tree_Population_Structure.R
+- Population_Structure.R
+- PCA.R
+- Neighbor_joining_tree.R
