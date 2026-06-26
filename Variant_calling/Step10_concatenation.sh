@@ -15,7 +15,7 @@ module load HTSlib/1.18-GCC-12.3.0   || true
 
 # =========================
 INDIR="../joint_genotype/gatk_filtered_biallelic_maskGT_miss005"
-OUT_VCF="../joint_genotype/gwas_ready/gsoja_dp5_miss005.vcf.gz"
+OUT_VCF="../joint_genotype/gwas_ready/gsoja.vcf.gz"
 THREADS="${SLURM_CPUS_PER_TASK:-1}"
 # =========================
 
