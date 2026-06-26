@@ -32,8 +32,8 @@ For each chromosome:
 
 ## Tools / modules
 
-- BCFtools `v1.18`
-- HTSlib `v1.18`
+- BCFtools v1.18
+- HTSlib v1.18
 - SLURM workload manager
 
 ## How to run on the cluster (SLURM)
