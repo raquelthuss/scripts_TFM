@@ -29,4 +29,4 @@ plink --bfile snps --ld-snp glyso.PI483463.gnm1.Gs16:13661213:G-T --ld-window-kb
 
 ### Tools
 
-- PLINK `v1.9.0-b.7.11`
+- PLINK v1.9.0-b.7.11
