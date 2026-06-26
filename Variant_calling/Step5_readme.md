@@ -53,3 +53,5 @@ Example: `../joint_genotype/Gs01_genotyped_chunks.vcf.gz`
 -   SLURM workload manager
 
 ### How to run on the cluster (SLURM)
+
+1. Submit the job (see README.md)
