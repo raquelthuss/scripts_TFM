@@ -14,8 +14,8 @@ module load HTSlib/1.18-GCC-12.3.0   || module load HTSlib   || true
 # =========================
 # EDIT ONLY THIS
 # =========================
-IN_VCF="../joint_genotype/gwas_ready/gsoja_dp5_miss20.vcf.gz"
-OUT_VCF="../joint_genotype/gwas_ready/gsoja_dp5_miss20_poly.vcf.gz"
+IN_VCF="../joint_genotype/gwas_ready/gsoja.vcf.gz"
+OUT_VCF="../joint_genotype/gwas_ready/gsoja_poly.vcf.gz"
 # =========================
 
 echo "[INFO] Input:  ${IN_VCF}"
