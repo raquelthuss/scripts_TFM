@@ -7,6 +7,7 @@ This directory includes the scripts used to perform **GWAS analysis**, to identi
 - Step 3: Conduct a phenotype analysis.
 - Step 4: Perform GWAS analysis with GAPIT.
 - Step 5: Run linkage disequilibrium analysis to define LD blocks surrounding top candidates.
+- Step 6: Plot LD decay along the chromosome in which the candidate SNP is located.
 
 The R scripts used to generate phenotypic distribution plot, manhattan plot and boxplots can be found in this directory under the following names:
 
