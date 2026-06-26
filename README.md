@@ -12,9 +12,10 @@ The pipeline is designed to handle large-scale sequencing datasets through per-s
 
 ## 2. Population structure
 
-
 This directory includes the commands used to assess **population structure**, a key step prior to GWAS. In structured populations, allele frequencies may vary systematically between subgroups due to shared ancestry, which can introduce spurious associations and inflate test statistics, leading to false positives. 
 
 To adress this, **fastSTRUCTURE** is applied, a Bayesian clustering algorithm for large SNP datasets.
 
 ## 3. GWAS (Genome-Wide Associations Studies)
+
+This directory includes the scripts used to perform **GWAS analysis**, to identify maker-trait associations using **GAPIT**, incorporating genotype data, covariate data, and phenotype data.
