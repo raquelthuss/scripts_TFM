@@ -37,9 +37,9 @@ For each chromosome:
 
 ## Tools / modules
 
-- GATK `v4.5.0.0`
-- BCFtools `v1.18`
-- HTSlib `v1.18`
+- GATK v4.5.0.0
+- BCFtools v1.18
+- HTSlib v1.18
 - SLURM workload manager
 
 ## How to run on the cluster (SLURM)
