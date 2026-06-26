@@ -23,7 +23,7 @@ For this reason, Step 4 is divided into two parts:
 
 ### Inputs
 
--   Chromosome-specific gVCFs   `../gvcf_batch/*.g.vcf.gz`
+-   Chromosome-specific gVCFs   `../gvcf/*.g.vcf.gz`
 -   Reference genome    `../ref/glyso.PI483463.gnm1.YJWS.genome_main.fna`
 
 ### Outputs
