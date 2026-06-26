@@ -8,7 +8,7 @@ genotypes from the genome-wide VCF file.
 ### Usage
 
 ```bash
-# Index .vcf.gz file
+# Index pruned dataset .vcf.gz file
 bcftools index dataset_maf_005.vcf.gz
 
 # Extract the SNP of interest
@@ -21,12 +21,13 @@ bcftools query -f '%CHROM\t%POS\t%REF\t%ALT[\t%GT]\n' Gs16:12963807.vcf.gz -H > 
 ### Input
 
 - Pruned dataset `.vcf.gz`
-- Pruned dataset index `.vcf.
+- Pruned dataset index `.vcf.gz.csi`
 
 ### Output
 
-- Table containing genotypes for the specified SNP `genotipo_Gs16_12963807.txt`
+- Target SNP genotypic data `Gs16:12963807.vcf.gz`
+- Target SNP genotypic data table `genotipo_Gs16_12963807.txt`
 
 ### Tools
 
-- 
+- BCFtools v1.18
