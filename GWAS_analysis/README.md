@@ -6,6 +6,8 @@ Each script contains the necessary commands to run:
 - **Phenotype_Analysis.R**: analysis of phenotype distribution using a Gamma GLMM and extraction of estimated marginal means
   
 - **Nodule_size_Distribution.R**: bar plot showing phenotypic variations across genotypes
+
+- **Conversion2hapmap.R**: conversion of genotype data (.vcf) to HapMap format required by GAPIT.
   
 - **GAPIT.R**: GWAS analysis with multiple statistical models
   
