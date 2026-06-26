@@ -1,4 +1,4 @@
-# Step 1. Conversion to .vcf file
+# Conversion to .vcf file
 
 ### Description
 
