@@ -19,14 +19,14 @@ chromosome and iterates over all samples, producing one gVCF per **sample × chr
 
 ## Inputs
 
--   Deduplicated BAM files: `..//bwa/*_sorted_dedup*.bam`
+-   Deduplicated BAM files: `../bwa/*_sorted_dedup*.bam`
 -   BAM index files: `.bam.bai`
 -   Reference genome: `./ref/glyso.PI483463.gnm1.YJWS.genome_main.fna`  
     (indexed for BWA, SAMtools, and GATK; see `Step2_readme`)
 
 ## Outputs
 
-Written to `..//gvcf/`
+Written to `../gvcf/`
 
 For each sample and chromosome:
 
