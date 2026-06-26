@@ -12,4 +12,4 @@ The R scripts used to generate phenotypic distribution plot, manhattan plot and 
 
 - Nodule_size_Distribution.R
 - Manhattan_Plot.R
-- Boxplot_SNP_Gs(16/11).R: boxplots showing nodule size distribution across genotypic classes of SNP Gs16:12963807:G-A and Gs11:36243818:C-T, respectively.
+- Boxplot_SNP_Gs(16/11).R: boxplots showing phenotypic distribution across genotypic classes of candidate SNPs. The required genotypic data subset can be obtained using `Extract_genotype.md` script.
